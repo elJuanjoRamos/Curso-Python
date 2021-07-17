@@ -61,3 +61,29 @@ def listar_terminos(**terminos):
 listar_terminos(IDE='Integrated Delevopment Enviroment', PK='Primary Key', DBSM='Database Management System')
 
 #Distintos tipos de datos como argumentos
+def desplegar_nombres(nombres):
+    for i in nombres:
+        print(i)
+
+
+desplegar_nombres(['Juan', 'Pedro', 'Martha', 'Luisa'])
+
+#Funciones Recursivas
+
+def factorial(numero:int):
+    if numero == 1:
+        return 1
+    else:
+        return numero * factorial(numero-1)
+
+
+print(f'El factorial es { factorial(9) }')
+
+
+def print_numeros(numero:int):
+    if numero > 1:
+        print(numero)
+        print_numeros(numero-1)
+
+
+print_numeros(5)
