@@ -1,16 +1,25 @@
-# This is a sample Python script.
+# para definir funciones
 
-# Press Mayús+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+def mi_funcion(nombre:str, edad: int, direccion: str):
+    print(f'Hola {nombre}, con edad { edad } y direccion { direccion }, te saludo desde mi funcion')
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+mi_funcion('Karina', 15, '19 Av Zona 15')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+def sumar(operando1:int,operando2:int):
+    return operando1 + operando2
+
+print('El resultado es ', sumar(5,5))
+
+
+# valores por default a los parametros de funcion
+
+def dividir(a=1, b=1) -> int:
+    return a / b
+
+
+print('El resultado de dividir es ', dividir(5,5))
+print('El resultado de dividir es ', dividir())
+
+
