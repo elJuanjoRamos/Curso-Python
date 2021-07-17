@@ -81,3 +81,86 @@ else:
     print('Ya no hay numeros')
 print(lista)
 
+
+# ////////////////////////////////
+#           SET
+# no tiene indices ni orden, no soporta elementos duplicados
+# ////////////////////////////////
+print('inicia set')
+
+planetas = { 'Marte', 'Tierra', 'Venus', 'Jupiter' }
+
+print(planetas)
+
+#largo
+print(len(planetas))
+# revisar si elemento esta presente
+print('Marte' in planetas)
+# agregar mas elementos
+planetas.add('Mercurio')
+print(planetas)
+# eliminar elementos
+planetas.remove('Tierra')
+print(planetas)
+
+planetas.discard('Jupiter')
+print(planetas)
+
+# limpiar por completo
+planetas.clear()
+print(planetas)
+# eliminar por completo
+#del planetas
+#print(planetas)
+
+
+# ////////////////////////////////
+#           Diccionarios
+# esta compuesto por dos elementos, (key, value)
+# ////////////////////////////////
+
+print('empieza dicionario')
+
+diccionario = {
+    'IDE': 'Integrated Development Enviroment',
+    'OOP': 'Object Oriented Programming',
+    'DBSM': 'Database Management System'
+}
+
+variable: int = 0
+
+print(diccionario)
+
+#largo
+print(len(diccionario))
+#acceder a los elementos
+print(diccionario['IDE'])
+#otra forma de acceder
+print(diccionario.get('IDE'))
+
+#RECCORRER ELEMENTOS DEL DICCIONARIO
+for key, value in diccionario.items():
+    print(key, value)
+
+#Unicamente recuperar las llaves
+for key in diccionario.keys():
+    print(key)
+
+# Unicamente recuperar los valores
+for value in diccionario.values():
+    print(value)
+
+# agregar un elemento
+
+diccionario['PK'] = 'Primary Key'
+print(diccionario)
+# remover un elemento
+diccionario.pop('IDE')
+print(diccionario)
+# LIMPIAR
+diccionario.clear()
+print(diccionario)
+
+
+
+
