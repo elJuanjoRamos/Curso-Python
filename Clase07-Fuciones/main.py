@@ -23,3 +23,41 @@ print('El resultado de dividir es ', dividir(5,5))
 print('El resultado de dividir es ', dividir())
 
 
+# argumentos variables, cuando no se sabe la cantidad de parametros que tiene una funcion
+def listarNombres(*nombres):
+    for nombre in nombres:
+        print(nombre)
+
+
+listarNombres('Pedro', 'Karina', 'Marcos', 'Martha', 'Erick', 'El Brayan', 'La Kimberly')
+
+
+def sumar_numeros(*args):
+    resul: int = 0
+    for i in args:
+        resul += i
+    return resul
+
+resultado = sumar_numeros(10,20,30,40,50)
+print(f'El resultado es: { resultado }')
+
+
+
+def multiplicar_numeros(*args):
+    resul: int = 1
+    for i in args:
+        resul *= i
+    return resul
+
+print(f'El resultado es: { multiplicar_numeros(10,10,10) }')
+
+# ARGUMENTOS VARIABLES LLAVE-VALOR
+# **nombre -> diccionario
+def listar_terminos(**terminos):
+    for key, value in terminos.items():
+        print(f'Llave: { key }, Valor: { value }')
+
+
+listar_terminos(IDE='Integrated Delevopment Enviroment', PK='Primary Key', DBSM='Database Management System')
+
+#Distintos tipos de datos como argumentos
