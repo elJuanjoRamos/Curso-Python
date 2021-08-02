@@ -19,7 +19,7 @@ class Orden:
         return f"""
         Orden: { self._idOrden} 
         Computadoras: [
-            { computadora_Str }
+            \t{ computadora_Str }
         ]
         """
 

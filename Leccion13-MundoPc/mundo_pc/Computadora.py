@@ -24,10 +24,3 @@ class Computadora:
         """
 
 
-teclado = Teclado('HP', 'USB')
-raton = Raton('HP', 'USB')
-monitor = Monitor('HP', 15)
-
-computadora = Computadora('HP', monitor, teclado, raton)
-print(computadora)
-
